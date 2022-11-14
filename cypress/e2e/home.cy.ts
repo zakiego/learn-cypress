@@ -4,7 +4,7 @@ describe("home spec", () => {
   })
 
   it("passes", () => {
-    cy.get("[data-test='hero-heading']").contains(
+    cy.getByData("hero-heading").contains(
       "Testing Next.js Applications with Cypress"
     )
   })

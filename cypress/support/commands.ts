@@ -1,5 +1,11 @@
 /// <reference types="cypress" />
-// ***********************************************
+
+Cypress.Commands.add("getByData", (selector) => {
+  return cy.get(`[data-test=${selector}]`)
+})
+
+export {}
+
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
 // existing commands.
